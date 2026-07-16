@@ -9,10 +9,12 @@ mkdir -p ~/.themes
 tar -xJf ~/cosmology/Kripton-v40.tar.xz -C ~/cosmology
 cp -r ~/cosmology/Kripton-v40 ~/.themes/
 gsettings set org.gnome.desktop.interface gtk-theme "Kripton-v40"
+gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
+gsettings set org.gnome.desktop.interface icon-theme "Papirus"
+papirus-folders -t Papirus -C teal -u
+
 
 sudo systemctl enable sddm bluetooth.service
 sudo systemctl start bluetooth.service
 
 cp -r ~/cosmology/config/* ~/.config/
-
-papirus-folders -t Papirus -C teal -u
