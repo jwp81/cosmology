@@ -63,7 +63,7 @@ hl.env("HYPRCURSOR_SIZE", "24")
 -----------------------
 
 -- THEME:
-hl.env("GTK_THEME", "Celestial-Aliz-Dark")
+hl.env("GTK_THEME", "Kripton-v40")
 
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
