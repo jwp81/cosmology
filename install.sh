@@ -18,3 +18,5 @@ sudo systemctl enable sddm bluetooth.service
 sudo systemctl start bluetooth.service
 
 cp -r ~/cosmology/config/* ~/.config/
+sudo rm -rf /usr/share/wlogout/icons
+sudo cp -r ~/.config/wlogout/icons /usr/share/wlogout/icons
