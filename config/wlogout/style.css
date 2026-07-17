@@ -1,0 +1,62 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	font-size: 8pt;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+button {
+    border-radius: 0;
+    border-color: #18191a;
+	text-decoration-color: #FFFFFF;
+    color: #FFFFFF;
+	background-color: #1b1f23;
+	border-style: solid;
+	border-width: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+	margin: 20px 0px;
+    
+    /* Changed to ease-in-out to stop layout engine flickering */
+	transition: all 0.2s ease-in-out;
+}
+
+button:focus, button:active, button:hover {
+	background-color: #0b3d2e;
+	outline-style: none;
+	background-size: 35%;
+	margin: 0px 0px; 
+	border-radius: 25px;
+}
+
+/* Explicitly target the ends so they fully round out on hover without needing !important */
+#lock:focus, #lock:active, #lock:hover,
+#shutdown:focus, #shutdown:active, #shutdown:hover {
+    border-radius: 25px;
+}
+
+#lock {
+    background-image: url("/usr/share/wlogout/icons/lock.png");
+    border-radius: 25px 0px 0px 25px;
+}
+
+#sleep {
+    background-image: url("/usr/share/wlogout/icons/sleep.png");
+}
+
+#logout {
+    background-image: url("/usr/share/wlogout/icons/logout.png");
+}
+
+#shutdown {
+    background-image: url("/usr/share/wlogout/icons/shutdown.png");
+    border-radius: 0px 25px 25px 0px;
+}
+
+#reboot {
+    background-image: url("/usr/share/wlogout/icons/reboot.png");
+}
